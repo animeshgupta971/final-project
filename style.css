@@ -1,5 +1,20 @@
+:root {
+    --primary-color: #7d5f50;
+    --secondary-color: #8b6f63;
+    --white: #ffffff;
+    --secondary: #ffffff;
+    --heading-font-size: 30px;
+    --body-font-size: 16px;
+    --paragraph-font-size-1:20px;
+    --paragraph-font-size-2:24px;
+    --spacing:2rem;
+    --font-weight-1:500;
+    --space:80px;
+
+  }
 body{
     font-family: system-ui;
+    font-size: var(--body-font-size);
 
 }
 *{
@@ -18,9 +33,10 @@ header {
     color: #fff;
     font-weight: 600;
     z-index: 999;
+    transition: all .3s ease-in;
 }
 header.sticky {
-    color: #000;
+    color: var(--primary-color);
     background-color: #fff;
 }
 
@@ -34,7 +50,7 @@ header.sticky {
     text-decoration: none;
 }
 .sticky .header-right a {
-    color: #000;
+    color: var(--primary-color);
 }
 .sticky .dark-logo{
     display: block!important;
@@ -45,6 +61,7 @@ header.sticky {
 img{
     max-width: 100%;
     width: 100%;
+    display: block;
 }
 .banner img{
     width: 100%;
@@ -80,6 +97,9 @@ img{
 }
 .text-with-image-left {
     padding: 3rem;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 .banner-content{
     position: absolute;
@@ -114,4 +134,58 @@ img{
     .text-with-image-left {
         padding: 6rem 2rem;
     }
+}
+img.text-with-image-left-logo {
+    max-width: 360px;
+}
+
+.three-block {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    gap: 3rem;
+    place-items: center;
+    padding-inline: 3rem;
+}
+.three-block-middle-image p {
+    font-size: var(--paragraph-font-size-2);
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.three-block-left-text,.three-block-right-text{
+    font-size: var(--paragraph-font-size-1);
+    color: var(--secondary-color);
+}
+.space{
+    height: var(--space);
+}
+.page-width {
+    max-width: 1400px;
+    width: 100%;
+    margin-inline: auto;
+}
+.our-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-inline: 3rem;
+    place-items: center;
+    padding-block: 50px;
+
+}
+.our-project-left{
+    color: var(--secondary-color);
+}
+.our-project-left h3{
+    font-size: 48px;
+}
+.our-project-left h2{
+    font-size: 60px;
+}
+.our-project-left p{
+    font-size:var(--paragraph-font-size-1);
+}
+.our-project-middle {
+    position: relative;
+    top: 50px;
 }
