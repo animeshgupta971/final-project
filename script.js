@@ -7,80 +7,25 @@ $(function() {
         }
     });
 });
-
-
-
- $(document).ready(function() {
-    $(".merox-variants").click(function() {
-        $(".merox-variants").removeClass("active");
-        $(this).addClass("active");
-    });
-
-    $('.cartBtn').click(function() {
-        var thiss = $(this);
-        var id = $(this).parents().find(".merox-variants.active").attr('data-var-id');
-        addItemToCart(id, thiss);
-    });
-   
-    function addItemToCart(variant_id, thiss) {
-        jQuery.ajax({
-            type: 'POST',
-            url: '/cart/add.js',
-            data: {
-                "id": variant_id,
-                "quantity": 1
-            },
-            dataType: 'json',
-            success: function() {
-                thiss.text("ADDED")
-                window.location = "/cart";
-            }
-        });
+$(document).ready(function() {
+    var $hamburger = $('.m-hamburger');
+    var $menu = $('.mobile-menu');
+  
+    if ($hamburger.length && $menu.length) {
+      $hamburger.on('click', function() {
+        $menu.toggleClass('active');
+      });
+    } else {
+      console.error('One or more required elements not found.');
     }
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  });
+  
+// $(document).ready(function() {
+//     // get the video element and set up an event listener for when it ends
+//     var video = $('video')[0];
+//     video.addEventListener('ended', function() {
+//       // hide the video container element
+//       $('.responsive-video').hide();
+//     });
+//   });
+  
