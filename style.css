@@ -11,7 +11,7 @@
     --spacing:2rem;
     --font-weight-1:500;
     --space:80px;
-    --main-heading-font-size:clamp(2rem, 3vw, 3rem);
+    --main-heading-font-size:clamp(1.5rem, 3vw, 3rem);
     --main-heading-font-size-2:clamp(2rem, 5vw, 3rem);
     --horizontal-padding:3rem;
   }
