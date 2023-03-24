@@ -295,6 +295,7 @@ margin-top: 1rem;
     
     .our-project {
         grid-template-columns: 1fr;
+        padding-bottom: 0;
     }
     
     footer.footer {
