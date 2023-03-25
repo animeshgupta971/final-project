@@ -381,4 +381,8 @@ margin-top: 1rem;
         transform: translateX(-300px);
         transition: all .3s ease-in;
     }
+    .mobile-menu.active > div{
+        transform: translateX(0px)!important;
+        transition: all .3s ease-in;
+    }
 }
