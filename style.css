@@ -365,6 +365,7 @@ margin-top: 1rem;
         background: var(--secondary-color);;
         padding: 6px;
         z-index: 999;
+        color: #fff;
     }
     header.header {
         display: none;
@@ -382,10 +383,34 @@ margin-top: 1rem;
         padding: 1rem 0 0 1rem;
         transform: translateX(-300px);
         transition: all .3s ease-in;
+        visibility: hidden;
+        z-index: 1010;
     }
     .mobile-menu.active > div{
         transform: translateX(0px)!important;
         transition: all .3s ease-in;
+        visibility: visible;
     }
-   
+    /* .mobile-menu.active {
+        content: '';
+        position: fixed;
+        inset: 0 0 0 0;
+        background: #00000087;
+        z-index: 1000;
+    } */
+    .three-block-left-text {
+        text-align: center;
+    }
+    
+    .text-with-image-left {
+        text-align: center;
+    }
+    
+    .three-block-right-text {
+        text-align: center;
+    }
+    
+    img.text-with-image-left-logo {
+        margin-inline: auto;
+    }
 }

@@ -19,13 +19,3 @@ $(document).ready(function() {
       console.error('One or more required elements not found.');
     }
   });
-  
-// $(document).ready(function() {
-//     // get the video element and set up an event listener for when it ends
-//     var video = $('video')[0];
-//     video.addEventListener('ended', function() {
-//       // hide the video container element
-//       $('.responsive-video').hide();
-//     });
-//   });
-  
